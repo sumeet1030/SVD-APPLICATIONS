@@ -14,3 +14,4 @@ def compress_show_color_images_layer(img_name,k):
     plt.title("compression ratio={:.2f}".format(compression_ratio)+"%")
     
     plt.imshow(image_reconst)
+interact(compress_show_color_images_layer,img_name=list(color_images.keys()),k=(1,550));
